@@ -1,0 +1,147 @@
+:root {
+	--ColorA: #EC008C;
+	--ColorB: #43BEFF;
+}
+
+:focus {outline: 0;color: var(--ColorB);text-decoration:none;}
+
+*, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, center, u, b, i,figure, figcaption {margin: 0;padding: 0;border: 0;outline: 0;font-weight: normal;font-style: normal;font-size: 100%;font-family: inherit;vertical-align: baseline;box-sizing: border-box;}
+
+
+html, body {
+	font-family: pt-sans, source-han-sans-traditional,  sans-serif;
+	font-size: 14px;
+	font-weight:normal;
+	position: relative;
+	height: 100%;
+}
+
+a{color: var(--ColorB);text-decoration: none;cursor: pointer;transition:color 0.3s ease-in-out;}
+a:hover {color: var(--ColorA);text-decoration: underline;}
+
+label{cursor: pointer;}
+small, .small{font-size: 0.8em;letter-spacing: 1px;}
+
+.mainTitle{font-size:1.5rem !important;line-height: 22px;margin:0 0 1rem 0;text-transform:uppercase;margin-top:2rem;letter-spacing:-1px; color: var(--ColorA);}
+.hidden {display: none;}
+.float-right{float: right;}
+
+.icon-l{display: table-cell;height: 100%;float: left;margin-right: .5rem;clear: left;}
+.icon-r{display: table-cell;height: 100%;float: right;padding-left: .5rem;clear: right;}
+.icon-l > svg, .icon-r > svg {height: 1.5rem;vertical-align: middle;transform: translateY(-7%);}
+.icon-sm > svg{height: 1rem}
+
+.col-1,.col-2,.col-3,.col-4,.col-5 {float:left;}
+.col-1{min-width:100px;width: 25%;}
+.col-2{min-width:200px;width: 50%;}
+.col-3{min-width:300px;width: 75%;}
+.col-4{min-width:300px;width: 100%;}
+
+.btn{position: relative;display: inline-block;padding: 0 2rem;margin: .3rem .5rem;border-radius: 6px;cursor: pointer;border: 1px solid #FFF;background: rgba(255,255,255,0.7);line-height: 2.5;transition: all 0.3s ease-in-out;min-width: 180px;}
+.btn:hover{color: var(--ColorA) !important;background: #FFF;}
+
+#theme{background-size: cover;background: url(../images/bg.jpg)center center;background-attachment: fixed;}
+#theme::before {content: '';display: block;position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -10;background: url(../images/bg.jpg) no-repeat center center;background-size: cover;}
+#theme > header{display: block;position: absolute;top: 6rem;left: 0;width: 100%;text-align: center;pointer-events: none;z-index: 99;}
+#theme > header h1{display: block;height: 160px;margin: 0 800px 0 0;color: transparent;}
+#theme > header h1 a{display: inline-block;pointer-events: auto;font-size: 0;color: transparent;}
+
+#wrapper-content{max-width: 1024px;height: auto;overflow: hidden;margin: 0 auto;position: relative;z-index: 1;}
+#wrapper-content header{background:rgba(255,255,255,0.3);padding: 2rem 0;width: 100%;}
+
+#about{margin: 4rem 2rem 4rem 360px;line-height: 1.5;}
+#about .btn{float: right;}
+
+#cv {background: rgba(0, 0, 0, 0.5);color: #FFF;z-index: 9;position: absolute;top: 0;left: 0;width: 100%;padding: 2rem;overflow: hidden;opacity: 0;pointer-events: none;transition: all 0.5s ease-out;-webkit-transition: all 0.5s ease-out;}
+#cv:before{content: "Resume";font-weight: 600;color: transparent;font-size: 20rem;position: fixed;left: 0;bottom:-webkit-text-stroke: 1px #000;text-stroke: 1px #000;}
+
+#cvToggle {position: absolute;z-index: 999;top: 2rem;right: 8rem;width: auto;color: transparent;display: none;}
+#cvToggle:checked + #cv {opacity: 1;pointer-events: auto;height:auto;min-height: auto;}
+#cvToggle:checked ~ #wrapper-content {display: none;opacity: 0;}
+#cv .wrapper {max-width: 960px;width: 100%;margin: 0 auto;position: relative;}
+#cv article {min-width: 400px;width: 50%;margin: 0;padding:0 0 1rem 0;overflow:hidden;display: inline-block;vertical-align: top;font-size:1rem;line-height: 1.5rem;}
+#cv .vcard{margin: 6rem 0 0 0;padding: 160px 0 0 0;}
+#cv .vcalendar{margin: 6rem 0 0 0;}
+#cv a{color:#BBB;line-height: 1.5}
+#cv a:hover{color:#43BEFF;}
+#cv .btn{color:#000;position: absolute;top: 3rem;right: 0;z-index: 99;}
+#cv section{padding:0 0 1.5rem 0;overflow:hidden;}
+#cv section hgroup{border-bottom: solid transparent 3px;transition: all 0.5 ease-in-out;}
+#cv section:hover hgroup{border-bottom: solid var(--ColorB) 3px;}
+#cv hgroup,.title{font-size:1.4rem;line-height: 1.3;margin:0 0 1rem 0;transition:all 0.1s ease-in-out;text-shadow: 2px 2px 4px #000;}
+#cv .vcard ul li{list-style: none;}
+#cv .descriptions{color: #BBB;margin:0 0 1rem 0;}
+#cv .performance li:before{content: "\25C8";margin-right: .5rem;font-size: .8rem;color: #BBB;}
+#cv .performance li:hover:before{color: var(--ColorB);}
+
+
+#portfolio{background: rgba(240,0,140,0.7);padding: 2em;overflow: hidden;position: relative;}
+#portfolio:before{content: "portfolio";font-weight: 600;color: transparent;font-size: 20rem;position: absolute;top: -6rem;left: 2rem;-webkit-text-stroke: 1px #FF99d9;text-stroke: 1px #FF99d9;}
+
+#portfolioNav{margin: 2rem auto 4rem auto;text-align: center;}
+#portfolioNav .btn.active{background: var(--ColorB);color: #FFF;box-shadow: 2px 2px 5px #333;}
+#portfolioNav .btn:hover{box-shadow: 2px 2px 5px #333;transform: translateY(-3px);}
+#portfolioList{width: 100%;text-align: center;margin: 0 auto;padding: 0;min-height: 504px;font-size: 0;}
+
+.item{display: inline-block;list-style-type: none;vertical-align: top;position: relative;width: 0px;height: 160px;overflow: hidden;transition: all 500ms ease-in-out;opacity: 0;margin: 0;}
+.item .groups{display: none;visibility: hidden;}
+.item figure{position: relative;}
+.item figure img{width: 160px;height: 160px;}
+.item figcaption a{display: table-cell;vertical-align: middle;line-height: 1.5;color: var(--ColorA);text-decoration: none;}
+.item.show{width: 160px;height: 160px;margin: 4px;opacity: 1;}
+.item.show figcaption{position: absolute;display: table;vertical-align: middle;overflow: hidden;top: 0;left: 0;font-size: 0;opacity: 0;width: 160px;height: 160px;background: rgba(0,0,0,0.8);transition: opacity 350ms ease-in-out;}
+.item.show:hover figcaption{font-size: 1rem;opacity: 1;}
+
+footer{color: #BBB;background:rgba(0,0,0,0.7);font-style: normal;line-height: 2rem; padding: 4rem 10rem;position: relative;}
+footer h4{font-size:23px;line-height: 22px;margin:0 0 1rem 0;text-transform:uppercase;letter-spacing:-1px; color: var(--ColorA);}
+footer a{color: #BBB;}
+footer #copy{text-align: right;position: absolute;top: 5rem;right: 10rem;line-height: 1.75rem}
+footer #copy h4{background: url(../images/logo_s.png) no-repeat right top; height: 80px; padding: 0; margin:0 0 2rem 0; background-size: 160px 160px;}
+footer #copy h4:hover{background-position: right bottom;}
+
+.wa-mediabox-frame .wa-mediabox-close:hover{background: var(--ColorA);}
+.wa-mediabox-next:hover svg, .wa-mediabox-prev:hover svg {fill: var(--ColorA);}
+.wa-mediabox-open{display: none;visibility: hidden;}
+
+@media screen and (min-width: 320px) {
+	
+}
+
+@media screen and (max-width: 768px) {
+
+	#theme > header img{width: 200px;height: 100px;}
+	#wrapper-content header{padding: 16rem 0 1rem 0;}
+
+	#cv{padding: 2rem;min-height: 100vh;}
+	#cv article {width: 100%; min-width:100%;margin: 0;display: block;}
+	#cv time{background: rgba(255,255,255,0.3);color: #FFF;padding: 0 8px;border-radius: 4px;}
+	#cv .btn {position: absolute;transform: scale(.9);top: auto;bottom: 0;left: -1rem;right: auto;}
+	#cv .vcard {margin: 0;padding: 160px 0 0 0;}
+	#cv .vcalendar{margin: 0;}
+
+	#about{margin: 2rem 2rem 6rem 2rem;text-shadow: 0 0 5px #FFF;}
+	#about .btn {margin: 2rem 0 0 0;float: none !important;transform: scale(.9);}
+
+	#portfolio {padding: 2rem 0;}
+	.item.show{width: 320px;text-align: left;}
+	.item{background: rgba(0,0,0,0.8);}
+	.item.show figcaption{background-color: transparent;font-size: 1rem;opacity: 1;width: 320px;}
+	.item figcaption a{padding: 0 0 0 160px;margin: 0;z-index: 5;text-align: center;}
+
+	#cv hgroup{border-bottom: solid var(--ColorB) 3px;}
+
+	footer{padding: 2rem;}
+	footer #copy{position: relative;margin:2rem 0 0; text-align: left;top: 0;right: auto;}
+	footer #copy h4{display: none;}
+
+	#cv:before{content: '';font-size: 0;display: none;}
+	#portfolio:before{content: '';font-size: 0;display: none;}
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
