@@ -1,0 +1,7 @@
+@use 'sass:math';
+@use '../globals/mixins' as *;
+
+div{
+	@extend %text-center;
+	width: math.div(600px, 960px) * 100%;
+}

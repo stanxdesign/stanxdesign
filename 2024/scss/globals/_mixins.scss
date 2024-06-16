@@ -1,0 +1,30 @@
+@use 'sass:math';
+
+/* RWD media breakpoint (Desktop first) */
+$XL:1440px; $LG:1280px; $MD:1024px; $SM:768px; $XS:480px; /* 5 size*/
+
+/* OVER then "XL" */	@mixin xl{@media only screen and (min-width:$XL){@content;}}
+/* Between "XL" and "LG", apply normal style */
+/* width < "LG" not required, inherit form XL would be great */	@mixin lg{@media only screen and (max-width:$LG){@content;}}
+/* width < "MD" for most devices  */	@mixin md{@media only screen and (max-width:$MD - 1){@content;}}
+/* width < "SM" for most mobile devices */	@mixin sm{@media only screen and (max-width:$SM - 1){@content;}}
+/* width < "XS" not required, the "SM" mixin is better */	@mixin xs{@media only screen and (max-width:$XS - 1){@content;}}
+
+/* color */
+$brand:#EC008C;
+$primary:#43BEFF;
+$white:#FFFFFF;
+$black:#000000;
+$dark:#333333;
+$glay:#CECECE;
+$alert:#992255;
+
+/* layout style Extend*/
+%text-center {
+	text-align: center;
+}
+
+%margin-center {
+	margin-right: auto;
+	margin-left: auto;
+}

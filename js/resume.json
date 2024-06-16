@@ -1,0 +1,182 @@
+{
+	"h1": "I am Stanley",
+	"introduction": [
+		"Front-End / Web Design",
+		"Branding / Visual Design",
+		"Video / Multimedia Editing"
+	],
+	"skills":{
+		"Development": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Vue.js",
+			"Wordpress"
+		],
+		"Design":[
+			"Photoshop",
+			"Illustrator",
+			"Adobe XD",
+			"Figma",
+			"Premiere",
+			"Lightroom",
+			"After Effect"
+		]
+	},
+	"resume": [
+		{
+			"toD":"2008",
+			"formD":"2010",
+			"title":"Vi Design",
+			"subTitle":"Vi Design",
+			"where":"NPO, Taiwan Piano Podium",
+			"list":[
+				"台灣鋼琴協會品牌設計",
+				"主題網站設計",
+				"巷裡的幸福聽堂系列音樂會行銷企劃",
+				"品牌形象設計多媒體影音剪輯"
+			]
+		},
+		{
+			"toD":"2010",
+			"formD":"2012",
+			"title":"Web Designer",
+			"subTitle":"Web Designer",
+			"where":"Co., LESSON Digital",
+			"list":[
+				"大甲鎮鎮瀾宮年度活動設計",
+				"品牌網站、識別及文宣品設計"
+			]
+		},
+		{
+			"toD":"2012",
+			"formD":"2014",
+			"title":"Freealcer",
+			"subTitle":"Freealcer",
+			"where":"",
+			"list":[
+				"主題網站設計",
+				"品牌形象企劃與設計"
+			]
+		},
+		{
+			"toD":"2013",
+			"formD":"2015",
+			"title":"Designer",
+			"subTitle":"Designer",
+			"where":"LC., FULL WANG GROUP",
+			"list":[
+				"品牌網站設計",
+				"視覺設計企劃",
+				"品牌識別系統設計",
+				"禮賀品包裝設計",
+				"行銷活動視覺設計/執行"
+			]
+		},
+		{
+			"toD":"2015",
+			"formD":"",
+			"title":"Web/UI Engineer",
+			"subTitle":"Web/UI Engineer",
+			"where":"National Taichung Theater",
+			"list":[
+				"臺中國家歌劇院年度音樂節網站介面及互動設計",
+				"臺中國家歌劇院《官方網站》系統需求分析及專案執行",
+				"系統需求規劃、介面規劃、專案執行",
+				"品牌網站及LINE OA互動設計"
+			]
+		}
+	],
+	"portfolio": [
+		{
+			"title":"富旺國際 APP Landing page",
+			"subTitle":"Web/UI Engineer",
+			"url":"",
+			"type":"web",
+			"cover":[
+				{
+					"img":"app_1.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				}
+			],
+			"imgs":[
+				{
+					"img":"app_1.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				},
+				{
+					"img":"app_2.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				},
+				{
+					"img":"app_3.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				},
+				{
+					"img":"app_4.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				}
+			]
+		},
+		{
+			"title":"富旺國際 APP Landing page",
+			"subTitle":"Web/UI Engineer",
+			"url":"",
+			"type":"web",
+			"cover":[
+				{
+					"img":"app_1.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				}
+			],
+			"imgs":[
+				{
+					"img":"app_1.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				},
+				{
+					"img":"app_2.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				},
+				{
+					"img":"app_3.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				},
+				{
+					"img":"app_4.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				}
+			]
+		},
+		{
+			"title":"富旺國際 APP Landing page",
+			"subTitle":"Web/UI Engineer",
+			"url":"",
+			"type":"web",
+			"cover":[
+				{
+					"img":"app_1.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				}
+			],
+			"imgs":[
+				{
+					"img":"app_1.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				},
+				{
+					"img":"app_2.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				},
+				{
+					"img":"app_3.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				},
+				{
+					"img":"app_4.jpg",
+					"alt":"單頁式設計：跨平台自適應網頁"
+				}
+			]
+		}
+	]
+}
