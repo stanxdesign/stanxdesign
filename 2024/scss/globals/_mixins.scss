@@ -21,9 +21,12 @@ $lite:#ECECEC;
 $alert:#992255;
 $white-6: rgba(255,255,255,0.6);
 $white-8: rgba(255,255,255,0.8);
+$brand-0:rgba(236, 0, 140, 0);
 
 $font-size: 16px;
 $font-family: 'sxd', 'Times New Roman', Times, serif;
+
+$page-padding:3.8em;
 
 
 :root{
@@ -35,8 +38,10 @@ $font-family: 'sxd', 'Times New Roman', Times, serif;
 	--c-glay: #{$glay};
 	--c-lite: #{$lite};
 	--c-alert: #{$alert};
-	--c-w6: #{$white-6};
-	--c-w8: #{$white-8};
+	--c-white6: #{$white-6};
+	--c-white8: #{$white-8};
+	--c-brand0: #{$brand-0};
+	--page-padding: #{$page-padding};
 }
 
 /* layout style Extend*/

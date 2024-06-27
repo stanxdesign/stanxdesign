@@ -12,3 +12,46 @@ html, body{
 // 	@extend %text-center;
 // 	width: math.div(600px, 960px) * 100%;
 // }
+
+p{
+	font-size: 1em;
+}
+
+a{
+	font-size: 1em;
+	display: inline-block;
+	color: var(--c-brand);
+	background-color: var(--c-white);
+	padding: 0 .8em;
+	transition: all .5s ease-in-out;
+	letter-spacing: 1px;
+	&:hover{
+		&::before{
+			position: absolute;
+			top: .1em;
+			left: -1.8em;
+			content: '';
+			border-style: solid;
+			border-color: transparent;
+			border-top-width: .8em;
+			border-bottom-width: .8em;
+			border-left-width: 20px;
+			border-left-color: var(--c-white);
+			transform: scale(.6);
+		}
+	}
+}
+
+strong{
+	position: relative;
+	font-weight: normal;
+	&::after{
+		display: block;
+		content: '';
+		position: absolute;
+		bottom: -3px;
+		left:  -3%;
+		width: 106%;
+		border-bottom: 2px var(--c-white) dotted;
+	}
+}

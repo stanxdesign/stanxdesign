@@ -2,49 +2,215 @@
 @use '../globals/mixins' as *;
 
 body{
-	padding: 1.8em;
+	padding: var(--page-padding);
 	height: 100%;
 	background-color: var(--c-white);
 	overflow: hidden;
+}
+
+h2{
+	font-size: 2em;
+	margin: 3em 0 1em 0;
+	color: var(--c-white);
+	text-transform:uppercase;
+}
+h3{
+	font-size: 1.3em;
+	letter-spacing: -1px;
+}
+p{
+	margin: .6em 0;
 }
 
 .container{
 	#page > &{
 		width: 100%;
 		height: 100%;
-		background-image: url(/images/bg.jpg);
+		background-image: url(../images/bg.webp);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		overflow-y: scroll;
 		header{
+			position: fixed;
+			width: calc(100% - (var(--page-padding) * 2));
 			height: 100%;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
+			display: flex;
+			pointer-events: none;
+			z-index: 0;
 			#branding{
-				// width: 50%;
-				position:sticky;
-				padding: .8em;
-				text-align: right;
+				display: flex;
+				flex: 0 0 50%;
+				justify-content: right;
+				align-items: center;
+				padding: 0 3em 3em 3em;
 			}
-			blockquote{
-				// background-color: var(--c-brand);
-				// margin: 0 0 0 50%;
-				padding: .8em;
+			#brief{
+				display: flex;
+				justify-content: left;
+				align-items: center;
+				padding: 0 3em 3em 3em;
+			}
+		}
+		main{
+			position: relative;
+			background: linear-gradient(90deg, $brand-0 0% ,$brand-0 33.33%, $brand 33.331% ,$brand 66.66%, $brand-0 66.661% ,$brand-0 100%);
+			background-size: 150% 100%;
+			background-position-x: 0;
+			margin-top: 100vh;
+			transition: all .6s ease-in-out;
+			z-index: 1;
+			background-position-x: 100%;
+			&:hover{
+				background-position-x: 100%;
+			}
+		}
+		footer{
+			width: 100%;
+			height: 100%;
+			min-height: 100vh;
+		}
+		#resume{
+			font-size: .9em;
+			#experience{
+				li{
+					margin: var(--page-padding) 0;
+					display: flex;
+					hgroup{
+						flex: 0 0 16em;
+						margin: 0.6em 0;
+						color: var(--c-white);
+						font-weight: bold;
+						h3{
+							margin: 0;
+						}
+						p{
+							margin: 0;
+							color: var(--c-black);
+							opacity: .7;
+							letter-spacing: 0;
+						}
+						time{
+							opacity: .7;
+						}
+					}
+					p{
+						letter-spacing: 1px;
+					}
+				}
+			}
+		}
+		#profilio{
+			nav{
+				position: sticky;
+				top: calc(var(--page-padding) * 3);
+				a{
+					position: relative;
+					display: block;
+					width: max-content;
+					margin: .6em 0;
+					&.active{
+						&::before{
+							position: absolute;
+							top: .1em;
+							left: -1.8em;
+							content: '';
+							border-style: solid;
+							border-color: transparent;
+							border-top-width: .8em;
+							border-bottom-width: .8em;
+							border-left-width: 20px;
+							border-left-color: var(--c-white);
+							transform: scale(.6);
+						}
+					}
+				}
+			}
+			h2{
+				color: var(--c-brand);
+			}
+			#profilioList{
+				margin-top: calc(var(--page-padding) * 2);
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: right;
+				gap: 1em;
+				li{
+					width: 30%;
+					figure{
+						width: 100%;
+						height: 100%;
+						aspect-ratio: 1 / 1;
+						overflow: hidden;
+						figcaption{
+							display: none;
+						}
+						img{
+							width: 100%;
+							height: 100%;
+						}
+					}
+					a{
+						display: block;
+						width: 100%;
+						height: 100%;
+
+					}
+				}
 			}
 		}
 	}
-	header > &{
-	}
 	main > &{
 		position: relative;
-		background-color: var(--c-brand);
-		width: 50%;
-		left: 50%;
-		padding: 3.8em 8em;
-		font-size: .8rem;
+		display: grid;
+		grid-template: "c-left c-right";
+		grid-template-columns: 1fr 1fr;
+		height: 100%;
+		min-height: 100vh;
+		article{
+			padding: 8em;
+			&.left{
+				grid-area: c-left;
+			}
+			&.right{
+				grid-area: c-right;
+			}
+		}
+		aside{
+			padding: 3.8em 8em;
+			& .left{
+				grid-area: c-left;
+			}
+			& .right{
+				grid-area: c-right;
+			}
+		}
 	}
 	section > &{
 		margin: 0;
 	}
+	// &::before{
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 0;
+	// 	content: '';
+	// 	display: block;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	background-color: $brand;
+	// 	opacity: 0.5;
+	// 	z-index: -1;
+	// 	pointer-events: none;
+	// }
+}
+
+.flex{
+	display: flex;
+	gap: calc(var(--page-padding) * 2);
+}
+
+#toProfilio{
+	position: sticky;
+	top: 90vh;
+	float: right;
 }
