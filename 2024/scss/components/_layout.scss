@@ -1,0 +1,50 @@
+// @use 'sass:math';
+@use '../globals/mixins' as *;
+
+body{
+	padding: 1.8em;
+	height: 100%;
+	background-color: var(--c-white);
+	overflow: hidden;
+}
+
+.container{
+	#page > &{
+		width: 100%;
+		height: 100%;
+		background-image: url(/images/bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		overflow-y: scroll;
+		header{
+			height: 100%;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			#branding{
+				// width: 50%;
+				position:sticky;
+				padding: .8em;
+				text-align: right;
+			}
+			blockquote{
+				// background-color: var(--c-brand);
+				// margin: 0 0 0 50%;
+				padding: .8em;
+			}
+		}
+	}
+	header > &{
+	}
+	main > &{
+		position: relative;
+		background-color: var(--c-brand);
+		width: 50%;
+		left: 50%;
+		padding: 3.8em 8em;
+		font-size: .8rem;
+	}
+	section > &{
+		margin: 0;
+	}
+}

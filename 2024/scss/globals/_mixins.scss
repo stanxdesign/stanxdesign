@@ -16,8 +16,28 @@ $primary:#43BEFF;
 $white:#FFFFFF;
 $black:#000000;
 $dark:#333333;
-$glay:#CECECE;
+$glay:#CCCCCC;
+$lite:#ECECEC;
 $alert:#992255;
+$white-6: rgba(255,255,255,0.6);
+$white-8: rgba(255,255,255,0.8);
+
+$font-size: 16px;
+$font-family: 'sxd', 'Times New Roman', Times, serif;
+
+
+:root{
+  --c-brand: #{$brand};
+	--c-primary: #{$primary};
+	--c-white: #{$white};
+	--c-black: #{$black};
+	--c-dark: #{$dark};
+	--c-glay: #{$glay};
+	--c-lite: #{$lite};
+	--c-alert: #{$alert};
+	--c-w6: #{$white-6};
+	--c-w8: #{$white-8};
+}
 
 /* layout style Extend*/
 %text-center {
