@@ -23,9 +23,11 @@ a{
 	color: var(--c-brand);
 	background-color: var(--c-white);
 	padding: 0 .8em;
-	transition: all .5s ease-in-out;
+	transform:skew(-8deg);
 	letter-spacing: 1px;
 	&:hover{
+		transform:skew(-8deg) translateY(-1px);
+		box-shadow: 2px 2px 0 0 var(--c-black);
 		&::before{
 			position: absolute;
 			top: .1em;

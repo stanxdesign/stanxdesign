@@ -23,9 +23,6 @@ body {
     line-height: 1.8; /* Globally adjust line height */
     font-size: 1rem;
     font-weight: 400;
-    font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial,
-        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    color: var(--cirrus-fg);
 }
 
 /* Remove bullets from unordered lists */
@@ -60,7 +57,7 @@ button, input, optgroup, select, textarea {
 }
 
 button{
-	cursor: pointerÍ;
+	cursor: pointer;
 }
 
 /* Base styling for labels */
