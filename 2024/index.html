@@ -21,6 +21,9 @@
     <link rel="shortcut icon" href="https://stanxdesign.info/images/favicon.ico" />
     <link rel="stylesheet" href="css/main.min.css?v=0929" type="text/css" media="screen" />
 
+		<!-- <link rel="stylesheet" href="css/wa-mediabox.min.css" type="text/css" /> -->
+		<script src="js/wa-mediabox.min.js"></script>
+
     <!-- <script>
         (function(d) {
             var config = {
@@ -73,11 +76,13 @@
 						<section>
 							<h3>Development</h3>
 							<span>HTML</span><small>&starf;&starf;&starf;&starf;&starf;</small><br>
+							<span>SASS/SCSS</span><small>&starf;&starf;&starf;&starf;&starf;</small><br>
 							<span>CSS</span><small>&starf;&starf;&starf;&starf;&starf;</small><br>
-							<span>Git</span><small>&starf;&starf;&starf;&starf;</small><br>
-							<span>JavaScript</span><small>&starf;&starf;&starf;&starf;&starf;</small><br>
+							<span>Git</span><small>&starf;&starf;&starf;</small><br>
+							<span>JavaScript</span><small>&starf;&starf;&starf;&starf;</small><br>
+							<span>GSAP</span><small>&starf;&starf;&starf;</small><br>
 							<span>Vue.js</span><small>&starf;&starf;&starf;</small><br>
-							<span>Wordpress</span><small>&starf;&starf;&starf;&starf;</small><br>
+							<span>WordPress</span><small>&starf;&starf;&starf;&starf;</small><br>
 						</section>
 						<section>
 							<h3>Design Tools</h3>
@@ -89,6 +94,11 @@
 							<span>After Effect</span><small>&starf;&starf;&starf;</small><br>
 							<span>FinalCut Pro</span><small>&starf;&starf;&starf;</small>
 						</section>
+						<!-- <section>
+							<h3>Martech Platform</h3>
+							<span>LINE OA</span><small>&starf;&starf;&starf;&starf;</small><br>
+							<span>Google Tag Manager</span><small>&starf;&starf;&starf;&starf;</small><br>
+						</section> -->
 					</div>
 					<section>
 
@@ -156,27 +166,207 @@
 					</section>
 				</article>
 				<aside class="left">
-					<a id="toProfilio" href="#profilio">Profilio</a>
+					<nav class="main">
+						<a id="toProfilio" href="#profilio">Profilio</a>
+						<!-- <a id="toResume" href="#resume">Resume</a> -->
+					</nav>
 				</aside>
 			</section>
 			<section id="profilio" class="container">
 				<article class="left">
-					<ul id="profilioList">
+					<h3>Recent Projects</h3>
+					<ul id="profilioListKey" class="profilioList">
 						<!--項目-->
 						<li class="item web show">
 							<figure>
-								<figcaption><a class="zoom" href="images/works/app_1.jpg" data-mediabox="gallery-20" title="單頁式設計：跨平台自適應網頁">富旺國際<br>APP Landing page</a></figcaption>
-								<img src="../images/works/app_t.jpg" alt="企業APP 宣傳網頁 下載網頁 網站設計 單頁式網站 自適應網頁 OnePageView RWD loaging-page">
+								<figcaption><a class="zoom" href="/images/works/ars01.jpg" data-mediabox="gallery-ARS" title="ARS ASSOCIATION official website 藝術報國 官方網站架設">ARS ASSOCIATION official website</a></figcaption>
+								<img src="../images/works/ars_t.jpg" alt="ARS ASSOCIATION official website 藝術報國 官方網站架設">
 								<div class="group">
-									<a href="images/works/app_2.jpg" title="單頁式設計：跨平台自適應網頁" data-mediabox="gallery-20"></a>
-									<a href="images/works/app_3.jpg" title="單頁式設計：跨平台自適應網頁" data-mediabox="gallery-20"></a>
+									<a href="/images/works/app_2.jpg" title="ARS ASSOCIATION official website 藝術報國 官方網站架設" data-mediabox="gallery-ARS"></a>
+									<a href="/images/works/app_3.jpg" title="ARS ASSOCIATION official website 藝術報國 官方網站架設" data-mediabox="gallery-ARS"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item web show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/2in1_1.jpg" data-mediabox="gallery-shmm" title="Shimmering Production 微光製造 官方網站架設">Shimmering Production official website</a>
+								</figcaption>
+								<img src="../images/works/shmm_t.jpg" alt="Shimmering Production 微光製造 官方網站架設">
+								<div class="group">
+									<a href="/images/works/2in1_2.jpg" title="Shimmering Production" data-mediabox="gallery-shmm"></a>
+									<a href="/images/works/2in1_3.jpg" title="Shimmering Production" data-mediabox="gallery-shmm"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item web show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/echo_1.jpg" data-mediabox="gallery-ECHO" title="ECHO stylist 官方網站架設">ECHO stylist 官方網站架設</a>
+								</figcaption>
+								<img src="../images/works/echo_t.jpg" alt="ECHO stylist 官方網站架設">
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item graphic show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/summer_1.jpg" data-mediabox="gallery-summer" title="National Taichung Theater SummerFunTime Festival 臺中國家歌劇院 夏日放時光系列">National Taichung Theater SummerFunTime Festival 臺中國家歌劇院 夏日放時光系列</a>
+								</figcaption>
+								<img src="../images/works/summer_t.jpg" alt="National Taichung Theater SummerFunTime Festival 臺中國家歌劇院 夏日放時光系列" title="National Taichung Theater SummerFunTime Festival 臺中國家歌劇院 夏日放時光系列">
+								<div class="group">
+									<a href="/images/works/summer_2.jpg" title="National Taichung Theater SummerFunTime Festival 臺中國家歌劇院 夏日放時光系列" data-mediabox="gallery-summer"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item graphic package brand show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/tifa_1.jpg" data-mediabox="gallery-tifa" title="National Taichung Theater ArtNOVA/TIFA Festival 臺中國家歌劇院 藝享春天/臺灣國際藝術節系列">National Taichung Theater ArtNOVA/TIFA Festival 臺中國家歌劇院 藝享春天/臺灣國際藝術節系列</a>
+								</figcaption>
+								<img src="../images/works/tifa_t.jpg" alt="National Taichung Theater ArtNOVA/TIFA Festival 臺中國家歌劇院 藝享春天/臺灣國際藝術節系列">
+								<div class="group">
+									<a href="/images/works/tifa_2.jpg" title="National Taichung Theater ArtNOVA/TIFA Festival 臺中國家歌劇院 藝享春天/臺灣國際藝術節系列" data-mediabox="gallery-tifa"></a>
+									<a href="/images/works/tifa_3.jpg" title="National Taichung Theater ArtNOVA/TIFA Festival 臺中國家歌劇院 藝享春天/臺灣國際藝術節系列" data-mediabox="gallery-tifa"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item web show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/soul_1.jpg" data-mediabox="gallery-soul" title="National Taichung Theater GreatSoul Festival 臺中國家歌劇院 秋日巨人系列">National Taichung Theater GreatSoul Festival 臺中國家歌劇院 秋日巨人系列</a>
+								</figcaption>
+								<img src="../images/works/soul_t.jpg" alt="National Taichung Theater GreatSoul Festival 臺中國家歌劇院 秋日巨人系列">
+								<div class="group">
+									<a href="/images/works/soul_2.jpg" title="85威尼斯 選項導覽" data-mediabox="gallery-soul"></a>
+									<a href="/images/works/soul_3.jpg" title="85威尼斯 房型介紹" data-mediabox="gallery-soul"></a>
 								</div>
 							</figure>
 						</li>
 						<!--項目-->
 						<li class="item graphic show">
 							<figure>
-								<figcaption><a class="zoom" href="images/works/estate_1.jpg" data-mediabox="gallery-191" title="房地產趨勢論壇活動海報設計">房地產趨勢論壇<br>海報設計</a>
+								<figcaption>
+									<a class="zoom" href="/images/works/nttline_1.jpg" data-mediabox="gallery-4" title="National Taichung Theater 臺中國家歌劇院 LINE OA 功能設計">National Taichung Theater 臺中國家歌劇院 LINE OA 功能設計</a>
+								</figcaption>
+								<img src="../images/works/nttline_t.jpg" alt="National Taichung Theater 臺中國家歌劇院 LINE OA 功能設計" title="National Taichung Theater 臺中國家歌劇院 LINE OA 功能設計">
+								<div class="group">
+									<a href="/images/works/nttline_2.jpg" title="National Taichung Theater 臺中國家歌劇院 LINE OA 功能設計" data-mediabox="gallery-nttline"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item graphic brand show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/ntt_1.jpg" data-mediabox="gallery-ntt" title="National Taichung Theater 臺中國家歌劇院 品牌理念">National Taichung Theater 臺中國家歌劇院 品牌理念</a>
+								</figcaption>
+								<img src="../images/works/ntt_t.jpg" alt="National Taichung Theater 臺中國家歌劇院 品牌理念" title="National Taichung Theater 臺中國家歌劇院 品牌理念">
+								<div class="group">
+									<a href="/images/works/ntt_2.jpg" title="National Taichung Theater 臺中國家歌劇院 品牌理念" data-mediabox="gallery-ntt"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item graphic show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/ttoct_1.jpg" data-mediabox="gallery-4" title="National Taichung Theater 臺中國家歌劇院 中部劇場人才庫 前端設計">National Taichung Theater 臺中國家歌劇院 中部劇場人才庫 前端設計</a>
+								</figcaption>
+								<img src="../images/works/ttoct_t.jpg" alt="National Taichung Theater 臺中國家歌劇院 中部劇場人才庫 前端設計" title="National Taichung Theater 臺中國家歌劇院 中部劇場人才庫 前端設計">
+								<div class="group">
+									<a href="/images/works/ttoct_2.jpg" title="ttoct_t" data-mediabox="gallery-4"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item graphic show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/zon_1.jpg" data-mediabox="gallery-4" title="享發呆品牌 LINE OA 功能設計">享發呆品牌 LINE OA 功能設計</a>
+								</figcaption>
+								<img src="../images/works/zon_t.jpg" alt="享發呆品牌 LINE OA 功能設計" title="享發呆品牌 LINE OA 功能設計">
+								<div class="group">
+									<a href="/images/works/zon_2.jpg" title="展開" data-mediabox="gallery-4"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item graphic show">
+							<figure>
+								<figcaption><a class="zoom" href="/images/works/oli_1.jpg" data-mediabox="gallery-OLI" title="Miss.Oli Wedding official website 奧莉小姐 官方網站架設">Miss Oli official website</a>
+								</figcaption>
+								<img src="../images/works/oli_t.jpg" alt="房地產趨勢論壇 房地產 論壇 講座 活動 海報 視覺 平面 設計" title="Miss.Oli Wedding official website 奧莉小姐 官方網站架設">
+								<div class="group">
+									<a href="/images/works/app_2.jpg" title="ARS ASSOCIATION official website 藝術報國 官方網站架設" data-mediabox="gallery-OLI"></a>
+									<a href="/images/works/app_3.jpg" title="ARS ASSOCIATION official website 藝術報國 官方網站架設" data-mediabox="gallery-OLI"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item graphic show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/food_1.jpg" data-mediabox="gallery-4" title="食樂好時 品牌設計">食樂好時 品牌設計</a>
+								</figcaption>
+								<img src="../images/works/food_t.jpg" alt="食樂好時 品牌設計" title="食樂好時 品牌設計">
+								<div class="group">
+									<a href="/images/works/food_2.jpg" title="展開" data-mediabox="gallery-4"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item web show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/speed_1.jpg" data-mediabox="gallery-JTD" title="景泰設計 官方網站架設">景泰設計 官方網站架設</a>
+								</figcaption>
+								<img src="../images/works/jtd_t.jpg" alt="景泰設計 官方網站架設">
+								<div class="group">
+									<a href="/images/works/speed_4.jpg" title="景泰設計 官方網站架設" data-mediabox="gallery-JTD"></a>
+									<a href="/images/works/speed_2.jpg" title="景泰設計 官方網站架設" data-mediabox="gallery-JTD"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item web show">
+							<figure>
+								<figcaption>
+									<a class="zoom" href="/images/works/mr_1.jpg" data-mediabox="gallery-MR" title="MekongReview 網站設計">MekongReview 網站設計</a>
+								</figcaption>
+								<img src="../images/works/mr_t.jpg" alt="MekongReview 網站設計">
+								<div class="group">
+									<a href="/images/works/mr_2.jpg" title="MekongReview 網站設計" data-mediabox="gallery-MR"></a>
+									<a href="/images/works/mr_3.jpg" title="MekongReview 網站設計" data-mediabox="gallery-MR"></a>
+									<a href="/images/works/mr_4.jpg" title="MekongReview 網站設計" data-mediabox="gallery-MR"></a>
+								</div>
+							</figure>
+						</li>
+					</ul>
+					<input id="showEarlier" type="checkbox" name="earlier">
+					<p>
+						<label id="earlier" class="h3" for="showEarlier">Earlier Projects<br>(2009-2018)<span></span></label>
+					</p>
+					<ul id="profilioListEarlier" class="profilioList">
+						<!--項目-->
+						<li class="item web show">
+							<figure>
+								<figcaption><a class="zoom" href="/images/works/app_1.jpg" data-mediabox="gallery-20" title="單頁式設計：跨平台自適應網頁">富旺國際<br>APP Landing page</a></figcaption>
+								<img src="../images/works/app_t.jpg" alt="企業APP 宣傳網頁 下載網頁 網站設計 單頁式網站 自適應網頁 OnePageView RWD loaging-page">
+								<div class="group">
+									<a href="/images/works/app_2.jpg" title="單頁式設計：跨平台自適應網頁" data-mediabox="gallery-20"></a>
+									<a href="/images/works/app_3.jpg" title="單頁式設計：跨平台自適應網頁" data-mediabox="gallery-20"></a>
+								</div>
+							</figure>
+						</li>
+						<!--項目-->
+						<li class="item graphic show">
+							<figure>
+								<figcaption><a class="zoom" href="/images/works/estate_1.jpg" data-mediabox="gallery-191" title="房地產趨勢論壇活動海報設計">房地產趨勢論壇<br>海報設計</a>
 								</figcaption>
 								<img src="../images/works/estate_t.jpg" alt="房地產趨勢論壇 房地產 論壇 講座 活動 海報 視覺 平面 設計" title="房地產趨勢論壇活動海報設計">
 							</figure>
@@ -185,12 +375,12 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/2in1_1.jpg" data-mediabox="gallery-19" title="單頁式設計：跨平台自適應網頁">樂屋網 X 富旺國際<br>主題活動報名網站</a>
+									<a class="zoom" href="/images/works/2in1_1.jpg" data-mediabox="gallery-19" title="單頁式設計：跨平台自適應網頁">樂屋網 X 富旺國際<br>主題活動報名網站</a>
 								</figcaption>
 								<img src="../images/works/2in1_t.jpg" alt="講座宣傳 房地合一 活動網頁 EDM 網站設計 單頁式網站 自適應網頁 OnePageV RWD">
 								<div class="group">
-									<a href="images/works/2in1_2.jpg" title="單頁式設計：跨平台自適應網頁" data-mediabox="gallery-19"></a>
-									<a href="images/works/2in1_3.jpg" title="單頁式設計：跨平台自適應網頁" data-mediabox="gallery-19"></a>
+									<a href="/images/works/2in1_2.jpg" title="單頁式設計：跨平台自適應網頁" data-mediabox="gallery-19"></a>
+									<a href="/images/works/2in1_3.jpg" title="單頁式設計：跨平台自適應網頁" data-mediabox="gallery-19"></a>
 								</div>
 							</figure>
 						</li>
@@ -198,15 +388,15 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/speed_1.jpg" data-mediabox="gallery-18" title="富旺國際首頁">經濟部<br>主題計畫網站</a>
+									<a class="zoom" href="/images/works/speed_1.jpg" data-mediabox="gallery-18" title="富旺國際首頁">經濟部<br>主題計畫網站</a>
 								</figcaption>
 								<img src="../images/works/speed_t.jpg" alt="經濟部 創新產業加速育成計畫 中小企業 台灣產業 政策 網站設計">
 								<div class="group">
-									<a href="images/works/speed_4.jpg" title="首頁" data-mediabox="gallery-18"></a>
-									<a href="images/works/speed_2.jpg" title="網站內頁：計畫簡介" data-mediabox="gallery-18"></a>
-									<a href="images/works/speed_3.jpg" title="網站內頁：訊息公布" data-mediabox="gallery-18"></a>
-									<a href="images/works/speed_5.jpg" title="網站內頁：影音記錄" data-mediabox="gallery-18"></a>
-									<a href="images/works/speed_6.jpg" title="網站內頁：問與答" data-mediabox="gallery-18"></a>
+									<a href="/images/works/speed_4.jpg" title="首頁" data-mediabox="gallery-18"></a>
+									<a href="/images/works/speed_2.jpg" title="網站內頁：計畫簡介" data-mediabox="gallery-18"></a>
+									<a href="/images/works/speed_3.jpg" title="網站內頁：訊息公布" data-mediabox="gallery-18"></a>
+									<a href="/images/works/speed_5.jpg" title="網站內頁：影音記錄" data-mediabox="gallery-18"></a>
+									<a href="/images/works/speed_6.jpg" title="網站內頁：問與答" data-mediabox="gallery-18"></a>
 								</div>
 							</figure>
 						</li>
@@ -214,13 +404,13 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/fw_1.jpg" data-mediabox="gallery-17" title="富旺國際首頁">富旺國際<br>集團網站設計</a>
+									<a class="zoom" href="/images/works/fw_1.jpg" data-mediabox="gallery-17" title="富旺國際首頁">富旺國際<br>集團網站設計</a>
 								</figcaption>
 								<img src="../images/works/fw_t.jpg" alt="富旺國際 FullWang 官方網站 上市櫃 房地產 土地開發 網站設計">
 								<div class="group">
-									<a href="images/works/fw_2.jpg" title="網站內頁" data-mediabox="gallery-17"></a>
-									<a href="images/works/fw_3.jpg" title="網站內頁" data-mediabox="gallery-17"></a>
-									<a href="images/works/fw_4.jpg" title="線上出版品" data-mediabox="gallery-17"></a>
+									<a href="/images/works/fw_2.jpg" title="網站內頁" data-mediabox="gallery-17"></a>
+									<a href="/images/works/fw_3.jpg" title="網站內頁" data-mediabox="gallery-17"></a>
+									<a href="/images/works/fw_4.jpg" title="線上出版品" data-mediabox="gallery-17"></a>
 								</div>
 							</figure>
 						</li>
@@ -228,7 +418,7 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/flower_1.jpg" data-mediabox="prettyPhoto" title="『花見幸福 發現幸福』">花見幸福<br>莊園民宿手機版網站</a>
+									<a class="zoom" href="/images/works/flower_1.jpg" data-mediabox="prettyPhoto" title="『花見幸福 發現幸福』">花見幸福<br>莊園民宿手機版網站</a>
 								</figcaption>
 								<img src="../images/works/flower_t.jpg" alt="花見幸福 花蓮 民宿 旅遊 網站設計">
 							</figure>
@@ -237,11 +427,11 @@
 						<li class="item graphic brand show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/barber_1.jpg" data-mediabox="prettyPhoto" title="品牌名片設計">BARDER SHOP<br> 仕紳髮作<br>名片設計</a>
+									<a class="zoom" href="/images/works/barber_1.jpg" data-mediabox="prettyPhoto" title="品牌名片設計">BARDER SHOP<br> 仕紳髮作<br>名片設計</a>
 								</figcaption>
 								<img src="../images/works/barber_t.jpg" alt="BARDER SHOP 仕紳髮作 視覺 品牌 名片 平面 設計" title="品牌名片設計">
 								<div class="group">
-									<a href="images/works/barber_1.jpg" title="展開" data-mediabox="prettyPhoto"></a>
+									<a href="/images/works/barber_1.jpg" title="展開" data-mediabox="prettyPhoto"></a>
 								</div>
 							</figure>
 						</li>
@@ -249,17 +439,17 @@
 						<li class="item graphic show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/lavie_0.jpg" data-mediabox="gallery-1" title=" LaVee 2011『親愛的，帶我環遊世界吧』">LaVee 漂亮婚禮<br>2011 早春婚紗禮服<br>視覺形象設計</a>
+									<a class="zoom" href="/images/works/lavie_0.jpg" data-mediabox="gallery-1" title=" LaVee 2011『親愛的，帶我環遊世界吧』">LaVee 漂亮婚禮<br>2011 早春婚紗禮服<br>視覺形象設計</a>
 								</figcaption>
 								<img src="../images/works/lavie_t.jpg" alt="漂亮婚禮 婚紗設計 形象設計 影像合成 照片修圖" title="2011 LaVee 漂亮婚禮">
 								<div class="group">
-									<a href="images/works/lavie_1.jpg" title="Europe" data-mediabox="gallery-1"></a>
-									<a href="images/works/lavie_2.jpg" title="Asia" data-mediabox="gallery-1"></a>
-									<a href="images/works/lavie_3.jpg" title="Africa" data-mediabox="gallery-1"></a>
-									<a href="images/works/lavie_4.jpg" title="North America" data-mediabox="gallery-1"></a>
-									<a href="images/works/lavie_5.jpg" title="South America" data-mediabox="gallery-1"></a>
-									<a href="images/works/lavie_6.jpg" title="Australia" data-mediabox="gallery-1"></a>
-									<a href="images/works/lavie_7.jpg" title="Antarctica" data-mediabox="gallery-1"></a>
+									<a href="/images/works/lavie_1.jpg" title="Europe" data-mediabox="gallery-1"></a>
+									<a href="/images/works/lavie_2.jpg" title="Asia" data-mediabox="gallery-1"></a>
+									<a href="/images/works/lavie_3.jpg" title="Africa" data-mediabox="gallery-1"></a>
+									<a href="/images/works/lavie_4.jpg" title="North America" data-mediabox="gallery-1"></a>
+									<a href="/images/works/lavie_5.jpg" title="South America" data-mediabox="gallery-1"></a>
+									<a href="/images/works/lavie_6.jpg" title="Australia" data-mediabox="gallery-1"></a>
+									<a href="/images/works/lavie_7.jpg" title="Antarctica" data-mediabox="gallery-1"></a>
 								</div>
 							</figure>
 						</li>
@@ -267,12 +457,12 @@
 						<li class="item graphic package brand show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/sanyi_1.jpg" data-mediabox="gallery-9" title="『勝興 X 龍騰 X 舊山線』">勝興 X 龍騰 X 舊山線<br>推廣活動視覺</a>
+									<a class="zoom" href="/images/works/sanyi_1.jpg" data-mediabox="gallery-9" title="『勝興 X 龍騰 X 舊山線』">勝興 X 龍騰 X 舊山線<br>推廣活動視覺</a>
 								</figcaption>
 								<img src="../images/works/sanyi_t.jpg" alt="三義舊山線行銷提袋 勝興車站 龍騰斷橋 視覺 設計 明信片 插畫 提袋">
 								<div class="group">
-									<a href="images/works/sanyi_2.jpg" title="勝興車站 嫩紅山櫻" data-mediabox="gallery-9"></a>
-									<a href="images/works/sanyi_3.jpg" title="龍騰斷橋 晴朗天色" data-mediabox="gallery-9"></a>
+									<a href="/images/works/sanyi_2.jpg" title="勝興車站 嫩紅山櫻" data-mediabox="gallery-9"></a>
+									<a href="/images/works/sanyi_3.jpg" title="龍騰斷橋 晴朗天色" data-mediabox="gallery-9"></a>
 								</div>
 							</figure>
 						</li>
@@ -280,15 +470,15 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/85v_1.jpg" data-mediabox="gallery-8" title="『我從85威尼斯開始 愛上高雄』">85威尼斯<br>全動態Flash網站</a>
+									<a class="zoom" href="/images/works/85v_1.jpg" data-mediabox="gallery-8" title="『我從85威尼斯開始 愛上高雄』">85威尼斯<br>全動態Flash網站</a>
 								</figcaption>
 								<img src="../images/works/85v_t.jpg" alt="85威尼斯 高雄 民宿 旅遊 網站設計">
 								<div class="group">
-									<a href="images/works/85v_2.jpg" title="85威尼斯 選項導覽" data-mediabox="gallery-8"></a>
-									<a href="images/works/85v_3.jpg" title="85威尼斯 房型介紹" data-mediabox="gallery-8"></a>
-									<a href="images/works/85v_4.jpg" title="85威尼斯 最新訊息" data-mediabox="gallery-8"></a>
-									<a href="images/works/85v_5.jpg" title="85威尼斯 交通資訊" data-mediabox="gallery-8"></a>
-									<a href="images/works/85v_6.jpg" title="85威尼斯 旅遊景點" data-mediabox="gallery-8"></a>
+									<a href="/images/works/85v_2.jpg" title="85威尼斯 選項導覽" data-mediabox="gallery-8"></a>
+									<a href="/images/works/85v_3.jpg" title="85威尼斯 房型介紹" data-mediabox="gallery-8"></a>
+									<a href="/images/works/85v_4.jpg" title="85威尼斯 最新訊息" data-mediabox="gallery-8"></a>
+									<a href="/images/works/85v_5.jpg" title="85威尼斯 交通資訊" data-mediabox="gallery-8"></a>
+									<a href="/images/works/85v_6.jpg" title="85威尼斯 旅遊景點" data-mediabox="gallery-8"></a>
 								</div>
 							</figure>
 						</li>
@@ -296,11 +486,11 @@
 						<li class="item graphic show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/dzlg_1.jpg" data-mediabox="gallery-4" title="簡介DM正反面">鼎藏靚鍋<br>平面設計</a>
+									<a class="zoom" href="/images/works/dzlg_1.jpg" data-mediabox="gallery-4" title="簡介DM正反面">鼎藏靚鍋<br>平面設計</a>
 								</figcaption>
 								<img src="../images/works/dzlg_t.jpg" alt="鼎藏靚鍋 視覺 海報 DM 設計" title="鼎藏靚鍋簡介DM">
 								<div class="group">
-									<a href="images/works/dzlg_2.jpg" title="展開" data-mediabox="gallery-4"></a>
+									<a href="/images/works/dzlg_2.jpg" title="展開" data-mediabox="gallery-4"></a>
 								</div>
 							</figure>
 						</li>
@@ -308,12 +498,12 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/waiwao_1.jpg" data-mediabox="gallery-5" title="形象首頁">外澳會館<br>全動態Flash網站</a>
+									<a class="zoom" href="/images/works/waiwao_1.jpg" data-mediabox="gallery-5" title="形象首頁">外澳會館<br>全動態Flash網站</a>
 								</figcaption>
 								<img src="../images/works/waiwao_t.jpg" alt="外澳會館 頭城 衝浪 極限運動 飛行傘 網站設計 網站架設" title="Title">
 								<div class="group">
-									<a href="images/works/waiwao_2.jpg" title="資訊內頁" data-mediabox="gallery-5"></a>
-									<a href="images/works/waiwao_3.jpg" title="圖文內頁" data-mediabox="gallery-5"></a>
+									<a href="/images/works/waiwao_2.jpg" title="資訊內頁" data-mediabox="gallery-5"></a>
+									<a href="/images/works/waiwao_3.jpg" title="圖文內頁" data-mediabox="gallery-5"></a>
 								</div>
 							</figure>
 						</li>
@@ -321,13 +511,13 @@
 						<li class="item graphic show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/lotusspa_1.jpg" data-mediabox="gallery-6" title="天涼了，來泡湯吧">荷豐溫泉會館<br>活動主題視覺</a>
+									<a class="zoom" href="/images/works/lotusspa_1.jpg" data-mediabox="gallery-6" title="天涼了，來泡湯吧">荷豐溫泉會館<br>活動主題視覺</a>
 								</figcaption>
 								<img src="../images/works/lotusspa_t.jpg" alt="荷豐溫泉會館 荷豐館 北投 溫泉 視覺設計 海報設計 平面設計">
 								<div class="group">
-									<a href="images/works/lotusspa_2.gif" title="冬期，聖誕饗宴" data-mediabox="gallery-6"></a>
-									<a href="images/works/lotusspa_3.jpg" title="過好冬，宴席專案" data-mediabox="gallery-6"></a>
-									<a href="images/works/lotusspa_4.gif" title="好年如意" data-mediabox="gallery-6"></a>
+									<a href="/images/works/lotusspa_2.gif" title="冬期，聖誕饗宴" data-mediabox="gallery-6"></a>
+									<a href="/images/works/lotusspa_3.jpg" title="過好冬，宴席專案" data-mediabox="gallery-6"></a>
+									<a href="/images/works/lotusspa_4.gif" title="好年如意" data-mediabox="gallery-6"></a>
 								</div>
 							</figure>
 						</li>
@@ -335,14 +525,14 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/travelmate_1.jpg" data-mediabox="gallery-7" title="網站主頁">台灣玩家同好<br>電商網站設計</a>
+									<a class="zoom" href="/images/works/travelmate_1.jpg" data-mediabox="gallery-7" title="網站主頁">台灣玩家同好<br>電商網站設計</a>
 								</figcaption>
 								<img src="../images/works/travelmate_t.jpg" alt="台灣玩家同好 網站設計 購物 商城">
 								<div class="group">
-									<a href="images/works/travelmate_2.jpg" title="主頁總覽" data-mediabox="gallery-7"></a>
-									<a href="images/works/travelmate_5.jpg" title="頻道主頁" data-mediabox="gallery-7"></a>
-									<a href="images/works/travelmate_3.jpg" title="頻道主頁總覽" data-mediabox="gallery-7"></a>
-									<a href="images/works/travelmate_4.jpg" title="商品內容" data-mediabox="gallery-7"></a>
+									<a href="/images/works/travelmate_2.jpg" title="主頁總覽" data-mediabox="gallery-7"></a>
+									<a href="/images/works/travelmate_5.jpg" title="頻道主頁" data-mediabox="gallery-7"></a>
+									<a href="/images/works/travelmate_3.jpg" title="頻道主頁總覽" data-mediabox="gallery-7"></a>
+									<a href="/images/works/travelmate_4.jpg" title="商品內容" data-mediabox="gallery-7"></a>
 								</div>
 							</figure>
 						</li>
@@ -350,7 +540,7 @@
 						<li class="item graphic show">
 							<figure>
 								<figcaption>
-									<a class="caption-title zoom" href="images/works/bike.jpg" data-mediabox="prettyPhoto" title="Title">創意自行車<br>主題海報</a>
+									<a class="caption-title zoom" href="/images/works/bike.jpg" data-mediabox="prettyPhoto" title="Title">創意自行車<br>主題海報</a>
 								</figcaption>
 								<img src="../images/works/bike_t.jpg" alt="2012媽祖文化節 創意海報 海報設計 視覺設計">
 							</figure>
@@ -359,11 +549,11 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/piano_a1.jpg" data-mediabox="gallery-11" title="首頁">台灣鋼琴協會<br>官方網站</a>
+									<a class="zoom" href="/images/works/piano_a1.jpg" data-mediabox="gallery-11" title="首頁">台灣鋼琴協會<br>官方網站</a>
 								</figcaption>
 								<img src="../images/works/piano_at.jpg" alt="台灣鋼琴協會 網站設計 網站架設">
 								<div class="group">
-									<a href="images/works/piano_a2.jpg" title="首頁" data-mediabox="gallery-11"></a>
+									<a href="/images/works/piano_a2.jpg" title="首頁" data-mediabox="gallery-11"></a>
 								</div>
 							</figure>
 						</li>
@@ -371,7 +561,7 @@
 						<li class="item graphic brand show">
 							<figure>
 								<figcaption>
-									<a class="caption-title zoom" href="images/works/mycard_1.jpg" data-mediabox="mycard_1" title="Stan X design">Stan X design</a>
+									<a class="caption-title zoom" href="/images/works/mycard_1.jpg" data-mediabox="mycard_1" title="Stan X design">Stan X design</a>
 								</figcaption>
 								<img src="../images/works/mycard_t.jpg" alt="StanXdesign 手工名片 名片設計 視覺設計 CIS">
 							</figure>
@@ -380,11 +570,11 @@
 						<li class="item graphic brand show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/piano_b1.jpg" data-mediabox="gallery-10" title="『輯III 幸福之光』">台灣鋼琴協會<br>巷裡的幸福聽堂<br>系列視覺設計</a>
+									<a class="zoom" href="/images/works/piano_b1.jpg" data-mediabox="gallery-10" title="『輯III 幸福之光』">台灣鋼琴協會<br>巷裡的幸福聽堂<br>系列視覺設計</a>
 								</figcaption>
 								<img src="../images/works/piano_bt.jpg" alt="台灣鋼琴協會 巷裡的幸福聽堂 主題視覺設計 海報 酷卡 DM 入場券 視覺 行銷規劃">
 								<div class="group">
-									<a href="images/works/piano_b2.jpg" title="『輯I 首部曲』『清簡減探 Before幸福聽堂』" data-mediabox="gallery-10"></a>
+									<a href="/images/works/piano_b2.jpg" title="『輯I 首部曲』『清簡減探 Before幸福聽堂』" data-mediabox="gallery-10"></a>
 								</div>
 							</figure>
 						</li>
@@ -392,7 +582,7 @@
 						<li class="item graphic brand show">
 							<figure>
 								<figcaption>
-									<a class="caption-title zoom" href="images/works/white_1.jpg" data-mediabox="white_1">成功大學醫學系<br>活動設計</a>
+									<a class="caption-title zoom" href="/images/works/white_1.jpg" data-mediabox="white_1">成功大學醫學系<br>活動設計</a>
 								</figcaption>
 								<img src="../images/works/white_t.jpg" alt="成功大學 醫學系 白袍典禮 主題視覺 視覺設計 海報設計 形象設計">
 							</figure>
@@ -401,12 +591,12 @@
 						<li class="item graphic show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/gx_b2.jpg" data-mediabox="gallery-3" title="房客限定，精選佳釀">冠翔世紀溫泉會館<br>文宣設計</a>
+									<a class="zoom" href="/images/works/gx_b2.jpg" data-mediabox="gallery-3" title="房客限定，精選佳釀">冠翔世紀溫泉會館<br>文宣設計</a>
 								</figcaption>
 								<img src="../images/works/gx_bt.jpg" alt="冠翔世紀 礁溪 溫泉 形象設計 視覺設計 海報設計" title="冠翔世紀溫泉會館 專案海報設計">
 								<div class="group">
-									<a href="images/works/gx_b1.jpg" title="精緻美饌，真心招待" data-mediabox="gallery-3"></a>
-									<a href="images/works/gx_b3.jpg" title="春夏雙享，寵愛自己" data-mediabox="gallery-3"></a>
+									<a href="/images/works/gx_b1.jpg" title="精緻美饌，真心招待" data-mediabox="gallery-3"></a>
+									<a href="/images/works/gx_b3.jpg" title="春夏雙享，寵愛自己" data-mediabox="gallery-3"></a>
 								</div>
 							</figure>
 						</li>
@@ -414,13 +604,13 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/shbh_1.jpg" data-mediabox="gallery-13" title="官方網站形象動畫設計">香湖國際大飯店<br>形象網站</a>
+									<a class="zoom" href="/images/works/shbh_1.jpg" data-mediabox="gallery-13" title="官方網站形象動畫設計">香湖國際大飯店<br>形象網站</a>
 								</figcaption>
 								<img src="../images/works/shbh_t.jpg" alt="香湖大飯店 嘉義 形象 旅遊 網站設計">
 								<div class="group">
-									<a href="images/works/shbh_2.jpg" title="香湖官方網站 首頁選單" data-mediabox="gallery-13"></a>
-									<a href="images/works/shbh_3.jpg" title="香湖官方網站 內容簡介" data-mediabox="gallery-13"></a>
-									<a href="images/works/shbh_4.jpg" title="香湖官方網站 內頁簡介" data-mediabox="gallery-13"></a>
+									<a href="/images/works/shbh_2.jpg" title="香湖官方網站 首頁選單" data-mediabox="gallery-13"></a>
+									<a href="/images/works/shbh_3.jpg" title="香湖官方網站 內容簡介" data-mediabox="gallery-13"></a>
+									<a href="/images/works/shbh_4.jpg" title="香湖官方網站 內頁簡介" data-mediabox="gallery-13"></a>
 								</div>
 							</figure>
 						</li>
@@ -428,7 +618,7 @@
 						<li class="item graphic show">
 							<figure>
 								<figcaption>
-									<a class="caption-title zoom" href="images/works/narcosis_1.jpg" data-mediabox="narcosis_t" title="narcosis 主題海報">narcosis</a>
+									<a class="caption-title zoom" href="/images/works/narcosis_1.jpg" data-mediabox="narcosis_t" title="narcosis 主題海報">narcosis</a>
 								</figcaption>
 								<img src="../images/works/narcosis_t.jpg" alt="narcosis主題海報設計 視覺 海報 互動 設計">
 							</figure>
@@ -437,11 +627,11 @@
 						<li class="item graphic brand show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/gx_a1.jpg" data-mediabox="gallery-2" title="《溫泉魚》篇">冠翔世紀溫泉會館<br>主題視覺設計</a>
+									<a class="zoom" href="/images/works/gx_a1.jpg" data-mediabox="gallery-2" title="《溫泉魚》篇">冠翔世紀溫泉會館<br>主題視覺設計</a>
 								</figcaption>
 								<img src="../images/works/gx_at.jpg" alt="冠翔世紀 礁溪 溫泉 形象設計 大圖輸出 視覺設計" title="冠翔世紀溫泉會館 室外主題看板">
 								<div class="group">
-									<a href="images/works/gx_a2.jpg" title="《湯屋》篇" data-mediabox="gallery-2"></a>
+									<a href="/images/works/gx_a2.jpg" title="《湯屋》篇" data-mediabox="gallery-2"></a>
 								</div>
 							</figure>
 						</li>
@@ -449,11 +639,11 @@
 						<li class="item graphic package show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/futan_1.jpg" data-mediabox="gallery-15" title="出土伴手禮包裝設計">甫田61號探坑<br>包裝設計</a>
+									<a class="zoom" href="/images/works/futan_1.jpg" data-mediabox="gallery-15" title="出土伴手禮包裝設計">甫田61號探坑<br>包裝設計</a>
 								</figcaption>
 								<img src="../images/works/futan_t.jpg" alt="甫田61號探坑 南投 埔里 包裝設計">
 								<div class="group">
-									<a href="images/works/futan_2.jpg" title="出土伴手禮包裝設計" data-mediabox="gallery-15"></a>
+									<a href="/images/works/futan_2.jpg" title="出土伴手禮包裝設計" data-mediabox="gallery-15"></a>
 								</div>
 							</figure>
 						</li>
@@ -461,14 +651,14 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/85i_1.jpg" data-mediabox="gallery-12" title="前導動畫">85寒舍<br>主題網站設計</a>
+									<a class="zoom" href="/images/works/85i_1.jpg" data-mediabox="gallery-12" title="前導動畫">85寒舍<br>主題網站設計</a>
 								</figcaption>
 								<img src="../images/works/85i_t.jpg" alt="85寒舍 官方網站 高雄 旅遊 民宿 旅館 飯店 網站設計">
 								<div class="group">
-									<a href="images/works/85i_2.jpg" title="前導動畫" data-mediabox="gallery-12"></a>
-									<a href="images/works/85i_3.jpg" title="房型介紹" data-mediabox="gallery-12"></a>
-									<a href="images/works/85i_4.jpg" title="交通＆旅遊資訊" data-mediabox="gallery-12"></a>
-									<a href="images/works/85i_5.jpg" title="選單導覽" data-mediabox="gallery-12"></a>
+									<a href="/images/works/85i_2.jpg" title="前導動畫" data-mediabox="gallery-12"></a>
+									<a href="/images/works/85i_3.jpg" title="房型介紹" data-mediabox="gallery-12"></a>
+									<a href="/images/works/85i_4.jpg" title="交通＆旅遊資訊" data-mediabox="gallery-12"></a>
+									<a href="/images/works/85i_5.jpg" title="選單導覽" data-mediabox="gallery-12"></a>
 								</div>
 							</figure>
 						</li>
@@ -476,20 +666,24 @@
 						<li class="item web show">
 							<figure>
 								<figcaption>
-									<a class="zoom" href="images/works/formosa_1.jpg" data-mediabox="gallery-14" title="玉山電報 新聞首頁設計">玉山媒體<br>系列網站設計</a>
+									<a class="zoom" href="/images/works/formosa_1.jpg" data-mediabox="gallery-14" title="玉山電報 新聞首頁設計">玉山媒體<br>系列網站設計</a>
 								</figcaption>
 								<img src="../images/works/formosa_t.jpg" alt="玉山媒體 玉山午報 玉山電報 版型設計 CSS DIV JQ 視覺設計 網站設計">
 								<div class="group">
-									<a href="images/works/formosa_2.jpg" title="玉山電報 新聞首頁設計" data-mediabox="gallery-14"></a>
-									<a href="images/works/formosa_3.jpg" title="玉山媒體 資訊總覽首頁" data-mediabox="gallery-14"></a>
-									<a href="images/works/formosa_4.jpg" title="玉山媒體 資訊總覽首頁" data-mediabox="gallery-14"></a>
+									<a href="/images/works/formosa_2.jpg" title="玉山電報 新聞首頁設計" data-mediabox="gallery-14"></a>
+									<a href="/images/works/formosa_3.jpg" title="玉山媒體 資訊總覽首頁" data-mediabox="gallery-14"></a>
+									<a href="/images/works/formosa_4.jpg" title="玉山媒體 資訊總覽首頁" data-mediabox="gallery-14"></a>
 								</div>
 							</figure>
 						</li>
 					</ul>
 				</article>
 				<aside class="right">
-					<nav>
+					<nav class="main">
+						<!-- <a id="toProfilio" href="#profilio">Profilio</a> -->
+						<a id="toResume" href="#resume">Resume</a>
+					</nav>
+					<nav class="filter">
 						<h2>Profilio</h2>
 						<a href="#all" class="active">Show All</a>
 						<a href="#fontend">Fontend</a>

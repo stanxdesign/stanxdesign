@@ -14,10 +14,12 @@ h2{
 	color: var(--c-white);
 	text-transform:uppercase;
 	text-shadow: 2px 2px 0 var(--c-black);
+	transform: translateX(-.18em);
 }
 h3{
 	font-size: 1.3em;
 	color: var(--c-white);
+	transform: translateX(-.1em);
 }
 p{
 	margin: .6em 0;
@@ -89,12 +91,7 @@ p{
 			#tools{
 				span{
 					display: inline-block;
-					width: 6em;
-				}
-				small{
-					color: var(--c-white);
-					transform: translateY(2px);
-					opacity: .8;
+					width: 6.8em;
 				}
 			}
 			#experience{
@@ -115,18 +112,23 @@ p{
 							opacity: .7;
 							letter-spacing: 0;
 						}
-						time{
-							opacity: .7;
-						}
 					}
 					p{
 						letter-spacing: 1px;
 					}
 				}
 			}
+			small, time{
+				display: inline-block;
+				width: 11.2em;
+				color: var(--c-white);
+				transform: translateY(2px);
+				opacity: .8;
+				text-shadow: 1px 1px 0 var(--c-black);
+			}
 		}
 		#profilio{
-			nav{
+			.filter{
 				position: sticky;
 				top: calc(var(--page-padding) * 3);
 				a{
@@ -155,32 +157,160 @@ p{
 				color: var(--c-brand);
 				// text-shadow: 2px 2px 0 var(--c-white);
 			}
-			#profilioList{
-				margin-top: calc(var(--page-padding) * 2);
+			h3, .h3{
+				margin: calc(var(--page-padding) * 3) 0 .8em 0;
+				padding: .8em 0;
+				font-size: 1.2em;
+				text-align: right;
+				line-height: 1.25;
+				color: var(--c-white);
+				font-weight: bold;
+				&::after{
+					content: '';
+					display: inline-block;
+					border-style:solid ;
+					border-width: .4em;
+					border-color: transparent;
+					border-top-color: var(--c-white);
+					border-top-width: .8em;
+					border-bottom-width: 0;
+					margin: 0 0 -0.1em .5em;
+				}
+			}
+			.profilioList{
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: flex-end;
 				gap: 1em;
+				height: auto;
+				overflow: hidden;
+				transition: all .3s ease-in-out;
 				li{
-					width: 30%;
+					width: calc((100% / 3) - 1em);
 					figure{
+						position: relative;
 						width: 100%;
 						height: 100%;
 						aspect-ratio: 1 / 1;
+						border-radius: 8px;
 						overflow: hidden;
 						figcaption{
-							display: none;
+							position: absolute;
+							top: 0;
+							left: 0;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 100%;
+							height: 100%;
+							text-align: center;
+							line-height: 1.25;
+							&::after{
+								content: '';
+								width: 100%;
+								height: 100%;
+								display: block;
+								position: absolute;
+								top: 0;
+								left: 0;
+								background-color: var(--c-black);
+								opacity: 0;
+								z-index: 0;
+							}
+							a{
+								position: relative;
+								padding: .25em 1em;
+								text-decoration: none;
+								z-index: 1;
+								scale: 0;
+								&::before{
+									content: none !important;
+								}
+							}
+							&:hover{
+								a{
+									scale: 1;
+								}
+								&::after{
+									opacity: 0.6;
+								}
+							}
 						}
 						img{
 							width: 100%;
 							height: 100%;
+							object-fit: cover;
 						}
 					}
-					a{
-						display: block;
-						width: 100%;
-						height: 100%;
-
+				}
+			}
+			#profilioListKey{
+				&.profilioList{
+					li{
+						width: calc(50% - 1em);
+						figure{
+							aspect-ratio: 10 / 7;
+						}
+					}
+				}
+			}
+			#showEarlier{
+				display: none;
+				visibility: hidden;
+				opacity: 0;
+				transform: scale(0);
+				position: fixed;
+				left: -100vh;
+				z-index: -1;
+				~ p{
+					text-align: right;
+					.h3{
+						cursor: pointer;
+						position: relative;
+						text-align: center;
+						padding: 0 1.25em 0 .25em;
+						transition: all .6s ease-in-out;
+						border-bottom: 1px solid var(--c-white);
+						&::after{
+							content: '...';
+							position: absolute;
+							right: .25em;
+							top: .5em;
+							border: none;
+						}
+						&:hover{
+							background-color: var(--c-white);
+							color: var(--c-brand);
+							&::after{
+								color: var(--c-brand) !important;
+								border-top-color: var(--c-brand) !important;
+							}
+						}
+					}
+				}
+				&:not(:checked){
+					~ .profilioList{
+						max-height: 0;
+					}
+				}
+				&:checked{
+					~ .profilioList{
+						max-height: 100%;
+					}
+					~ p{
+						.h3{
+							&::after{
+								top: 1em;
+								content: '';
+								border-style:solid ;
+								border-width: .4em;
+								border-color: transparent;
+								border-top-color: var(--c-white);
+								border-top-width: .8em;
+								border-bottom-width: 0;
+								margin: 0 0 -0.1em .5em;
+							}
+						}
 					}
 				}
 			}
@@ -194,6 +324,7 @@ p{
 		height: 100%;
 		min-height: 100vh;
 		article{
+			position: relative;
 			padding: 8em;
 			&.left{
 				grid-area: c-left;
@@ -203,6 +334,7 @@ p{
 			}
 		}
 		aside{
+			position: relative;
 			padding: 3.8em 8em;
 			& .left{
 				grid-area: c-left;
@@ -260,11 +392,17 @@ p{
 
 .flex{
 	display: flex;
-	gap: calc(var(--page-padding) * 3.5);
+	// gap: calc(var(--page-padding) * 3.5);
 }
 
-#toProfilio{
+nav.main{
 	position: sticky;
-	top: 90vh;
+	top: calc(100vh - (var(--page-padding) * 4.5));
 	float: right;
+	display: flex;
+	// flex-direction: row;
+	gap: 1em;
+	.right &{
+		float: left;
+	}
 }
